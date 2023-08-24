@@ -125,10 +125,29 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
+
+//  - користувачів зі статусом true
 document.write('<h3>Користувачі зі статусом true:</h3>');
-for (let i = 0; i < user.length; i++) {
+for (let i = 0; i < users.length; i++) {
     if (users[i].status === true) {
-        document.write('<p>${users[i].name}, ${users[i].age} років</p>')
+        document.write(`<p>${users[i].name}, ${users[i].age} років</p>`);
+    }
+}
+
+//  - користувачів зі статусом false
+
+document.write('<h3>Користувачі зі статусом false:</h3>');
+for (let i = 0; i < users.length; i++) {
+    if (users[i].status === false) {
+        document.write(`<p>${users[i].name}, ${users[i].age} років</p>`);
+    }
+}
+
+//  - користувачів які старші за 30 років
+document.write('<h3>Користувачі зі статусом false:</h3>');
+for (let i = 0; i < users.length; i++) {
+    if (users[i].age > 30) {
+        document.write(`<p>${users[i].name}, ${users[i].age} років</p>`);
     }
 }
 
